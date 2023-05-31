@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TerhiMariaJ.github.io/static/css/main.d53c2596.css",
-    "main.js": "/TerhiMariaJ.github.io/static/js/main.e005e1d5.js",
-    "static/js/787.78438ab8.chunk.js": "/TerhiMariaJ.github.io/static/js/787.78438ab8.chunk.js",
-    "index.html": "/TerhiMariaJ.github.io/index.html",
-    "main.d53c2596.css.map": "/TerhiMariaJ.github.io/static/css/main.d53c2596.css.map",
-    "main.e005e1d5.js.map": "/TerhiMariaJ.github.io/static/js/main.e005e1d5.js.map",
-    "787.78438ab8.chunk.js.map": "/TerhiMariaJ.github.io/static/js/787.78438ab8.chunk.js.map"
+    "main.css": "/is-it-vegan/static/css/main.d53c2596.css",
+    "main.js": "/is-it-vegan/static/js/main.fc229e1c.js",
+    "static/js/787.78438ab8.chunk.js": "/is-it-vegan/static/js/787.78438ab8.chunk.js",
+    "index.html": "/is-it-vegan/index.html",
+    "main.d53c2596.css.map": "/is-it-vegan/static/css/main.d53c2596.css.map",
+    "main.fc229e1c.js.map": "/is-it-vegan/static/js/main.fc229e1c.js.map",
+    "787.78438ab8.chunk.js.map": "/is-it-vegan/static/js/787.78438ab8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d53c2596.css",
-    "static/js/main.e005e1d5.js"
+    "static/js/main.fc229e1c.js"
   ]
 }
