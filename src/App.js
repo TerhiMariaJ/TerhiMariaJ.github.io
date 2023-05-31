@@ -1,23 +1,79 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { useState } from "react";
+import { codes } from "./codes";
 
 function App() {
+  const [search, setSearch] = useState("");
+  const [results, setResults] = useState([]);
+  const [isSearching, setIsSearching] = useState(false);
+
+  const handleSearch = () => {
+    setIsSearching(true);
+    const dataArray = Object.values(codes);
+    const lowercaseSearch = search.toLowerCase();
+
+    const foundItems = dataArray.filter(
+      (item) => item.title === lowercaseSearch
+    );
+
+    if (foundItems.length > 0) {
+      setResults(foundItems);
+    } else {
+      setResults([]);
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <h1>Is the E-code vegan?</h1>
+      <p className="e700">This site excludes antibiotics (E700-E799)</p>
+      <input
+        type="text"
+        placeholder="E-code here"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        required
+      ></input>
+      <button onClick={handleSearch}>Search</button>
+      {isSearching &&
+        (results.length > 0 ? (
+          results.map((item, index) => (
+            <h2 key={`${item.id}-${index}`}>
+              {item.title} is vegan: {item.vegan}
+            </h2>
+          ))
+        ) : (
+          <h2>No results found. Check your input</h2>
+        ))}
+      <div className="Questionable">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          If you get a result of "questionable", it means one of two things:
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <p>
+          1: The ingredient behind the code is manufactured multiple ways and
+          the ingredient source varies between animal-derived and plant-based
+          ingredients.
+        </p>
+        <p>2: Used sources have contradicted each other.</p>
+        <p>
+          If the product does not have a vegan mark, I'd proceed with caution.
+        </p>
+      </div>
+      <div className="Sources">
+        <p>SOURCES:</p>
+        <a href="https://bakedbyclo.com/vegan-e-numbers-list/">Baked by Clo</a>
+        <p></p>
+        <a href="https://elatedvegan.health/which-e-numbers-are-vegan/">
+          Elated Vegan
         </a>
-      </header>
+        <p></p>
+        <a href="https://www.veganfriendly.org.uk/food-drink/vegan-e-numbers/">
+          Vegan friendly
+        </a>
+        <p></p>
+        <a href="https://food-info.net/"> Food Info</a>
+      </div>
     </div>
   );
 }
