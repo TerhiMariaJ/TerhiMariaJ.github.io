@@ -47,32 +47,39 @@ function App() {
           <h2>No results found. Check your input</h2>
         ))}
       <div className="Questionable">
-        <p>
-          If you get a result of "questionable", it means one of two things:
-        </p>
-        <p>
-          1: The ingredient behind the code is manufactured multiple ways and
-          the ingredient source varies between animal-derived and plant-based
-          ingredients.
-        </p>
-        <p>2: Used sources have contradicted each other.</p>
-        <p>
-          If the product does not have a vegan mark, I'd proceed with caution.
-        </p>
+        <p>In case of a questionable</p>
+        <div className="QuestionableData">
+          <p>
+            If you get a result of "questionable", it means one of two things:
+          </p>
+          <p>
+            1: The ingredient behind the code is manufactured multiple ways and
+            the ingredient source varies between animal-derived and plant-based
+            ingredients.
+          </p>
+          <p>2: Used sources have contradicted each other.</p>
+          <p>
+            If the product does not have a vegan mark, I'd proceed with caution.
+          </p>
+        </div>
       </div>
       <div className="Sources">
-        <p>SOURCES:</p>
-        <a href="https://bakedbyclo.com/vegan-e-numbers-list/">Baked by Clo</a>
-        <p></p>
-        <a href="https://elatedvegan.health/which-e-numbers-are-vegan/">
-          Elated Vegan
-        </a>
-        <p></p>
-        <a href="https://www.veganfriendly.org.uk/food-drink/vegan-e-numbers/">
-          Vegan friendly
-        </a>
-        <p></p>
-        <a href="https://food-info.net/"> Food Info</a>
+        <p>Sources used in this app:</p>
+        <div className="SourcesList">
+          <a href="https://bakedbyclo.com/vegan-e-numbers-list/">
+            Baked by Clo
+          </a>
+          <p></p>
+          <a href="https://elatedvegan.health/which-e-numbers-are-vegan/">
+            Elated Vegan
+          </a>
+          <p></p>
+          <a href="https://www.veganfriendly.org.uk/food-drink/vegan-e-numbers/">
+            Vegan friendly
+          </a>
+          <p></p>
+          <a href="https://food-info.net/"> Food Info</a>
+        </div>
       </div>
     </div>
   );

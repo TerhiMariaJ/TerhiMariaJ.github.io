@@ -8,29 +8,51 @@ button {
   background-color: #082d0f;
   color: white;
   margin: 10px;
-  padding: 5px;
-  border-radius: 100px/50px;
+  padding: 8px;
 }
 .e700 {
   background-color: #082d0f;
   color: white;
-  padding: 8px;
+  padding: 10px;
   margin: 10px;
-  border-radius: 100px/50px;
 }
 
 .Questionable {
+  position: relative;
+  display: block;
+  align-items: center;
   background-color: #dee5e5;
   padding: 10px;
   margin: 10px;
-  border-radius: 100px/50px;
+  max-width: 100%;
+}
+
+.QuestionableData {
+  display: none;
+}
+
+.Questionable:hover .QuestionableData {
+  display: block;
+  padding: 10px;
 }
 
 .Sources {
-  background-color: #dee5e5;
-  padding: 5px;
+  position: relative;
+  display: block;
+  align-items: center;
   margin: 10px;
-  border-radius: 100px/50px;
+  padding: 10px;
+  background-color: #dee5e5;
+  max-width: 100%;
+}
+
+.SourcesList {
+  display: none;
+}
+
+.Sources:hover .SourcesList {
+  display: block;
+  padding: 10px;
 }
 
 h1,
