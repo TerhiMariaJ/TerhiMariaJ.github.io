@@ -34,6 +34,7 @@ function App() {
     <div className="App">
       <h1>Is the E-code vegan?</h1>
       <p className="e700">This site excludes antibiotics (E700-E799)</p>
+      <p>Search by writing full E-code or just the number of the code</p>
       <input
         type="text"
         placeholder="E-code here"
