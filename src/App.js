@@ -11,7 +11,13 @@ function App() {
   const handleSearch = () => {
     setIsSearching(true);
     const dataArray = Object.values(codes);
-    const lowercaseSearch = search.toLowerCase();
+    let lowercaseSearch;
+
+    if (!search.toLowerCase().startsWith("e")) {
+      lowercaseSearch = "e" + search.toLowerCase();
+    } else {
+      lowercaseSearch = search.toLowerCase();
+    }
 
     const foundItems = dataArray.filter(
       (item) => item.title === lowercaseSearch
