@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/is-it-vegan/static/css/main.04afa4d5.css",
-    "main.js": "/is-it-vegan/static/js/main.dfc0ac3b.js",
+    "main.js": "/is-it-vegan/static/js/main.0a39c645.js",
     "static/js/787.78438ab8.chunk.js": "/is-it-vegan/static/js/787.78438ab8.chunk.js",
     "index.html": "/is-it-vegan/index.html",
     "main.04afa4d5.css.map": "/is-it-vegan/static/css/main.04afa4d5.css.map",
-    "main.dfc0ac3b.js.map": "/is-it-vegan/static/js/main.dfc0ac3b.js.map",
+    "main.0a39c645.js.map": "/is-it-vegan/static/js/main.0a39c645.js.map",
     "787.78438ab8.chunk.js.map": "/is-it-vegan/static/js/787.78438ab8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04afa4d5.css",
-    "static/js/main.dfc0ac3b.js"
+    "static/js/main.0a39c645.js"
   ]
 }
